@@ -14,6 +14,7 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react', 'react-dom', 'react/jsx-runtime', 'framer-motion'],
   },
+  
   server: {
     port: 3000,
     strictPort: true,
