@@ -98,8 +98,14 @@ const routeTree = rootRoute.addChildren([
   shopRoute,
   settingsRoute,
 ])
+tsimport { createHashHistory } from '@tanstack/react-router'
 
-const router = createRouter({ routeTree })
+const hashHistory = createHashHistory()
+
+const router = createRouter({ 
+  routeTree,
+  history: hashHistory,
+})
 
 declare module '@tanstack/react-router' {
   interface Register {
