@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+  const p = new URLSearchParams(window.location.search).get('p');
+  if (p) window.history.replaceState(null, '', '/' + p);
+</script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/CookList.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
