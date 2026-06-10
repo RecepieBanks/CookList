@@ -98,7 +98,7 @@ const routeTree = rootRoute.addChildren([
   shopRoute,
   settingsRoute,
 ])
-tsimport { createHashHistory } from '@tanstack/react-router'
+import { createHashHistory } from '@tanstack/react-router'
 
 const hashHistory = createHashHistory()
 
